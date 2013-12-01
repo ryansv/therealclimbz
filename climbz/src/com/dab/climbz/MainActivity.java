@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.view.Menu;
 
 public class MainActivity extends Activity {
+	
+	private static final String LOG_TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
