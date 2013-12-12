@@ -2,6 +2,7 @@ package com.dab.climbz;
 
 import android.os.Bundle;
 import android.app.ListActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -19,6 +20,7 @@ public class MainActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	Log.d(LOG_TAG, "onCreate() entry");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
@@ -29,6 +31,7 @@ public class MainActivity extends ListActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+    	Log.d(LOG_TAG, "onCreateOptionsMenu entry");
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
